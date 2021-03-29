@@ -7,13 +7,13 @@ namespace Gig_Hub.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class OverrideConventionsForGigsAndGenres : IMigrationMetadata
+    public sealed partial class PopulateGenres : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(OverrideConventionsForGigsAndGenres));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(PopulateGenres));
         
         string IMigrationMetadata.Id
         {
-            get { return "202103291505344_OverrideConventionsForGigsAndGenres"; }
+            get { return "202103291940236_PopulateGenres"; }
         }
         
         string IMigrationMetadata.Source

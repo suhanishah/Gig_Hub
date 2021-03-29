@@ -3,7 +3,7 @@ namespace Gig_Hub.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class CreateGig : DbMigration
+    public partial class addtables : DbMigration
     {
         public override void Up()
         {
@@ -12,7 +12,7 @@ namespace Gig_Hub.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
+                        Name = c.String(nullable: false, maxLength: 255),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -21,8 +21,10 @@ namespace Gig_Hub.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
+                        ArtistId = c.Int(nullable: false),
                         DateTime = c.DateTime(nullable: false),
-                        Venue = c.String(),
+                        Venue = c.String(nullable: false, maxLength: 255),
+                        GenreId = c.Byte(nullable: false),
                         Artist_Id = c.String(maxLength: 128),
                         Genre_Id = c.Int(),
                     })
