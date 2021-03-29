@@ -34,7 +34,7 @@ namespace Gig_Hub.Content
             var gig = new Gig()
             {
                 ArtistId = 2,
-                DateTime = DateTime.Parse(string.Format("{0} {1}",viewModel.Date, viewModel.Time)),
+                DateTime = viewModel.DateTime,
                 Venue = viewModel.Venue,
                 GenreId = viewModel.Genre
             };
