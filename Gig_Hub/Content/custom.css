@@ -1,0 +1,27 @@
+﻿.navbar-inverse {
+    background-color: #ff6a00;
+    border-color: #ff6a00;
+}
+
+    .navbar-inverse .navbar-brand {
+        color: white;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: white;
+    }
+
+    .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+        background-color: #e462047d;
+    }
+
+.dropdown-menu {
+
+    box-shadow: none;
+    webkit-box-shadow: none;
+}
+
+.navbar-brand {
+    font-size: 21px;
+    font-weight: 700;
+}

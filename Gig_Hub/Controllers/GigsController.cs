@@ -27,6 +27,7 @@ namespace Gig_Hub.Content
         }
 
      
+        [ValidateAntiForgeryToken]
         [HttpPost]
         public ActionResult Save(GigFormViewModel viewModel)
         {
